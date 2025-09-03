@@ -92,7 +92,3 @@ If you need actual historical data, consider upgrading to a paid CoinMarketCap A
 ## Disclaimer
 
 The AI investment suggestions provided by this application are for informational purposes only and should not be considered financial advice. Always do your own research before making investment decisions.
-
-## License
-
-MIT # CryptoBuddy
