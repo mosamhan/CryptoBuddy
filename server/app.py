@@ -462,7 +462,7 @@ def search_crypto():
             url = f"{CMC_API_URL}/v1/cryptocurrency/map"
             params = {
                 "listing_status": "active",
-                "limit": "100"
+                "limit": "2000"  # Increased from 100 to get more coins
             }
             response = requests.get(url, headers=CMC_HEADERS, params=params)
             
@@ -487,7 +487,7 @@ def search_crypto():
                     
                     coin_id = coin["id"]
                     filtered_coins.append({
-                        "id": coin["symbol"].lower(),
+                        "id": coin["slug"],  # Using slug instead of symbol"].lower(),
                         "name": coin["name"],
                         "symbol": coin["symbol"],
                         "image": f"https://s2.coinmarketcap.com/static/img/coins/64x64/{coin_id}.png"
